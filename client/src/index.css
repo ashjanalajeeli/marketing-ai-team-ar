@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background: #f7f8fc;
+  --foreground: #101828;
+  --card: #ffffff;
+  --card-foreground: #101828;
+  --popover: #ffffff;
+  --popover-foreground: #101828;
+  --primary: #5263d6;
+  --primary-foreground: #ffffff;
+  --secondary: #eef0ff;
+  --secondary-foreground: #3542a5;
+  --muted: #f1f3f7;
+  --muted-foreground: #667085;
+  --accent: #eef0ff;
+  --accent-foreground: #3542a5;
+  --destructive: #d92d20;
+  --destructive-foreground: #ffffff;
+  --border: #e4e7ec;
+  --input: #e4e7ec;
+  --ring: #5263d6;
+  --radius: 0.9rem;
+}
+
+* { border-color: var(--border); }
+html { direction: rtl; }
+body { margin: 0; min-width: 320px; background: var(--background); color: var(--foreground); font-family: "IBM Plex Sans Arabic", system-ui, sans-serif; }
+button, input, textarea { font: inherit; }
+button { transition: transform 160ms cubic-bezier(.23,1,.32,1), background-color 180ms ease, box-shadow 180ms ease; }
+button:active { transform: scale(.98); }
+::selection { background: #dfe3ff; color: #202b79; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
